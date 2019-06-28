@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5045"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/main_w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cure Me"
+        android:textAllCaps="true"
+        android:textColor="#540480"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="monospace" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="183dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/u_name_L"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pass_L"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Sign in" />
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Sign up" />
+
+
+</LinearLayout>

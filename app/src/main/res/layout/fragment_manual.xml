@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_id_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient ID"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_name_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_address_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:errorEnabled="true"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Group"
+                android:inputType="textCapCharacters"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:textColor="#000"
+                android:digits="aboABO+-"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_dis_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_sugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sugar"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_temp_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temperature"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_bp_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_bp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Pressure"
+                android:inputType="textFilter"
+                android:maxLines="1"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_hb_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/p_hb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pulse Rate"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_AddData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#51d8c7"
+            android:text="Submit" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_ViewData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#51d8c7"
+            android:text="View Details" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>
